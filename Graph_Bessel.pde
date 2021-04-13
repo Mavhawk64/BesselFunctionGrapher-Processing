@@ -39,7 +39,6 @@ void draw() {
   if(px > width) {
     noLoop();
   }
-  //noLoop();
 }
 
 float J(BigDecimal x, int m) {
@@ -56,13 +55,8 @@ float J(BigDecimal x, int m) {
     BigDecimal den = (den1.multiply(den2, mc)).multiply(den3, mc);
     //Quotient
     BigDecimal quot = num.divide(den, mc);
-    //println(quot);
-    //println(num + " / " + den + " = " + tot);
     s = s.add(quot, mc);
-    //println("Sum: " + s);
   }
- // println(s);
-  //println(s.floatValue());
   return s.floatValue();
 }
 
